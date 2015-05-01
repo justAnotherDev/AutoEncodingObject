@@ -8,7 +8,11 @@ Allows for custom handling of encoding and decoding if advanced logic is necessa
 
 ## Why?
 
-NSKeyedArchiver is AWESOME and I am using it in most of my projects now. I find it especially useful for sharing custom objects between different targets (Today extension, Watch, iOS apps). The amount of boilerplate code around NSCoding compliance is scary and it is really easy too add a property to the class later and forget to encode/decode it. 
+NSKeyedArchiver is [AWESOME](http://nshipster.com/nscoding/ "NSHipster Article on NSCoding/NSKeyedArchiver") and I am using it in most of my projects now. I find it especially useful for sharing custom objects between different targets (Today extension, Watch, iOS apps). The amount of boilerplate code around NSCoding compliance is scary however. Also it is really easy too later add a property to the class but then forget to encode/decode it.
+
+
+<b>AutoEncodingObject</b> solves this problem and makes creating serializable classes a breeze. Other solutions, like [Mantle](https://github.com/github/Mantle "Mantle"), exist to solve this problem, however I find them to be overkill for what I needed.
+
 
 
 ### Current Way
@@ -37,8 +41,6 @@ NSKeyedArchiver is AWESOME and I am using it in most of my projects now. I find 
 }
 @end
 ```
-
-<b>AutoEncodingObject</b> solves this problem and makes creating serializable classes a breeze. Other solutions, like Mantle, exist to solve this problem however I find them to be overkill for what I needed.
 
 ### New Way
 ```objc
