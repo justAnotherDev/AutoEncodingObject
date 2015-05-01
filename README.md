@@ -59,7 +59,7 @@ That being said, the amount of boilerplate code around NSCoding compliance is sc
 
 ## Custom Handling
 
-Custom handling of properties has been designed to be as easy as possible.
+Custom handling of properties has been designed to be as easy as possible. All you need to do is set the custom handled properties to ```objc @property (nonatomic, strong) NSArray *propertiesToIgnore;```
 
 ```objc
 @interface SomeObject : AutoEncodingObject
