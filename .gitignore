@@ -1,0 +1,10 @@
+# Xcode
+/build/*
+*.pbxuser
+*.xccheckout
+DerivedData
+*.xcuserstate
+*.xcuserdata
+
+# OSX
+.DS_Store
